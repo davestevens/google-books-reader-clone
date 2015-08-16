@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Books Reader Clone</title>
+    <link href="dist/css/style.css" rel="stylesheet">
+
+    <script data-main="dist/js/main.js" src="node_modules/requirejs/require.js"></script>
+  </head>
+
+  <body>
+    <div class="controls js-controls">
+      <div class="controls__item js-controls-zoom">
+        <button class="js-zoom-out">-</button>
+        <button class="js-zoom-in">+</button>
+        <span class="js-zoom-level">100</span>%
+      </div>
+
+      <div class="controls__item js-controls-pagination">
+        <button class="js-pagination" data-method="first">&laquo;</button>
+        <button class="js-pagination" data-method="previous">&lsaquo;</button>
+        <input class="js-pagination-current" type="text" />
+        /
+        <span class="js-pagination-total"></span>
+        <button class="js-pagination" data-method="next">&rsaquo;</button>
+        <button class="js-pagination" data-method="last">&raquo;</button>
+      </div>
+    </div>
+    <div class="viewport js-viewport">
+      <div class="container js-container"></div>
+    </div>
+  </body>
+</html>

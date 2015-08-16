@@ -1,0 +1,47 @@
+@import "compass/reset";
+
+$controls-height: 50px;
+
+body {
+  background-color: rgb(128, 128, 128);
+}
+
+.controls {
+  width: 100%;
+  height: $controls-height;
+  background-color: rgb(192, 192, 192);
+
+  &__item {
+    float: left;
+  }
+}
+
+.viewport {
+  width: 100%;
+  height: calc(100vh - #{$controls-height});
+  overflow-x: scroll;
+  overflow-y: auto;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+
+  &__text {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}

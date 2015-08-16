@@ -1,19 +1,24 @@
 {
-    "name": "google-books-reader-clone",
-    "version": "0.0.0",
-    "description": "Clone of Google Books Reader",
-    "scripts": {
-        "coffee": "coffee -o dist/js -cb src/coffee",
-        "coffee-watch": "coffee -o dist/js -wcb src/coffee"
-    },
-    "authors": [
-        "Dave Stevens <dave@dstvns.co.uk>"
-    ],
-    "license": "MIT",
-    "devDependencies": {
-        "coffee-script": "^1.9.3"
-    },
-    "dependencies": {
-        "requirejs": "^2.1.20"
-    }
+  "name": "google-books-reader-clone",
+  "version": "0.0.0",
+  "description": "Clone of Google Books Reader",
+  "scripts": {
+    "start": "http-server",
+    "coffee": "coffee -o dist/js -cb src/coffee",
+    "coffee-watch": "coffee -o dist/js -wcb src/coffee",
+    "compass": "compass compile",
+    "compass-watch": "compass watch"
+  },
+  "authors": [
+    "Dave Stevens <dave@dstvns.co.uk>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "http-server": "^0.8.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "requirejs": "^2.1.20"
+  }
 }

@@ -1,2 +1,9 @@
-# Node
+# Compass
+.sass-cache
+
+# NPM
 node_modules
+npm-debug.log
+
+# Compiled
+dist/*
